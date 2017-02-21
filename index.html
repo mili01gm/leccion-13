@@ -12,11 +12,11 @@
     <form action="" align="center">
       <div>
         <label for="nombres">Nombres:</label><br>
-        <input type="text" name="nombres" id="nombres" required>
+        <input type="text" name="nombres" pattern="[A-Za-z/""]{1,}" title="Ingrese nombre válido" required>
       </div><br>
       <div>
         <label for="apellidos">Apellidos:</label><br>
-        <input type="text" name="apellidos" id="apellidos" required>
+        <input type="text" name="apellidos" pattern="[A-Za-z]{1,}" title="Ingrese apellido válido" required>
       </div><br>
       <div>
         <label for="telefono">Teléfono:</label><br>
