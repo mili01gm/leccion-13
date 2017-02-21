@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lección 13</title>
+</head>
+<body>
+  <h1 align="center">Formulario de Datos</h1>
+  <section>
+    <form action="" align="center">
+      <div>
+        <label for="nombres">Nombres:</label><br>
+        <input type="text" name="nombres" id="nombres" required>
+      </div><br>
+      <div>
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" name="apellidos" id="apellidos" required>
+      </div><br>
+      <div>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="phonenum" name="telefono" pattern=".{9,}" title="Ingrese un número válido" required>
+      </div><br>
+      <p>Escoge tu carro para contiuar</p><br>
+      <div>
+        <select name="carros" id="carros" required>
+          <option value="">Escoge tu carro</option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div><br><br>
+      <div>
+        <label for="mail">Email:</label><br>
+        <input type="email" name="mail" id="mail" required>
+      </div><br>
+      <div>
+        <label for="password">Crea tu contraseña:</label><br>
+        <input type="password" name="password" pattern=".{6,}" title="ingrese 6 o más caracteres" required>
+      </div><br>
+      <div>
+        <button required type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
